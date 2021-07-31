@@ -10,11 +10,10 @@ Please note that you can use either one of React Native, Java, Kotlin, Swift, Re
 1. Please go to the following Figma link : https://www.figma.com/file/kN85lU5kmDid7DkmQkBh6Z/Untitled?node-id=1%3A108
 2. Please build three mobile screens as shown in the link. Please make the app responsive. You are expected to copy and paste the language on your own into your app.
 3. Make the standard width 414px
-4. Create a dummy hardcoded test account in the frontend - username: test@luxpmsoft.com / Password: test1234!
+4. Create a dummy hardcoded test account in the frontend - username: test@luxpmsoft.com / Password: test1234!. If the email format is invalid, please return "The format is wrong"
 5. The login should only work with this account since there is no integration with the backend.
 6. Leave the page after the login blank.
-7. For registration, please include validation check for email and password. If an incorrect format is provided, "Please provide the right email format" should be displayed. The password should include at least 8 letters including one uppercase letter, one lowercase letter, one special character, and one number. 
-8. Please provide us with a github link to the repository for the test and let us know of your desired salary. 
+7. Please provide us with a github link to the repository for the test and let us know of your desired salary. 
 We do check for the clean code. So, please make sure that your code is neat.
 
 
