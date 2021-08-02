@@ -8,7 +8,7 @@ We have reviewed your application and decided to proceed with the next step whic
 Please note that you can use either one of React Native, Java, Kotlin, Swift, React JS
 
 1. Please go to the following Figma link : https://www.figma.com/file/kN85lU5kmDid7DkmQkBh6Z/Untitled?node-id=1%3A108
-2. Please build three mobile screens as shown in the link. Please make the app responsive. You are expected to copy and paste the language on your own into your app.
+2. Please build all of the mobile screens as shown in the link. Please make the app responsive. You are expected to copy and paste the language on your own into your app. If you don't understand the contents, please use translator.
 3. Make the standard width 414px
 4. Create a dummy hardcoded test account in the frontend - username: test@luxpmsoft.com / Password: test1234!. If the email format is invalid, please return "The format is wrong"
 5. The login should only work with this account since there is no integration with the backend.
