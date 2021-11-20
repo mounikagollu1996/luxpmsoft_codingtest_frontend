@@ -79,9 +79,10 @@ export default function ForgotPassword({ match }) {
     const classes = useStyles();
     const [confirmedPassword, setConfirmedPassword] = React.useState('');
     const [password, setPassword] = React.useState('');
-    const [passwordMatch, setPasswordMatch] = React.useState(false);
+    // passwordMatch,
+    const [setPasswordMatch] = React.useState(false);
     const [error, setError] = React.useState('');
-    const [message, setMessage] = React.useState('');
+    // const [message, setMessage] = React.useState('');
     const { t } = useTranslation();
 
     let history = useHistory();
@@ -133,7 +134,7 @@ export default function ForgotPassword({ match }) {
             <CssBaseline />
             <div className={classes.paper}>
                 <Typography component="div">
-                    <center>{t('Please enter your new Password')}</center>
+                    <center>{'Please enter your new Password'}</center>
                 </Typography>
 
                 <form className={classes.form} onSubmit={forgotPassword}>
@@ -156,13 +157,13 @@ export default function ForgotPassword({ match }) {
                         required
                         fullWidth
                         name="password"
-                        label={t('Password')}
+                        label={'Password'}
                         type="password"
                         id="password"
                         onChange={handlePasswordChange}
                         inputRef={register}
                         error={!!errors.password}
-                        helperText={t(errorMessage('password'))}
+                        helperText={errorMessage('password')}
                     />
                     <TextField
                         variant="outlined"
@@ -176,9 +177,9 @@ export default function ForgotPassword({ match }) {
                         id="confirm"
                         onChange={handleConfirmedPasswordChange}
                         inputRef={register}
-                        id="confirm"
+                        // id="confirm"
                         error={!!errors.confirmPassword}
-                        helperText={t(errorMessage('confirmPassword'))}
+                        helperText={errorMessage('confirmPassword')}
                     />
                     <Button
                         type="submit"
@@ -187,7 +188,7 @@ export default function ForgotPassword({ match }) {
                         style={{ background: '#ffc107' }}
                         className={classes.submit}
                     >
-                        {t('Change password')}
+                        {'Change password'}
                     </Button>
                 </form>
             </div>

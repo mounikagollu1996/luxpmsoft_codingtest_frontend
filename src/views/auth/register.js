@@ -148,10 +148,10 @@ export default function SignUp() {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    <strong>{t('Welcome To Website')} !!</strong>
+                    <strong>{('Welcome To Website')} !!</strong>
                 </Typography>
                 <Typography component="div">
-                    <center>{t('Register As A User')} </center>
+                    <center>{('Register As A User')} </center>
                 </Typography>
                 <form
                     className={classes.form}
@@ -176,12 +176,12 @@ export default function SignUp() {
                         required
                         fullWidth
                         id="email"
-                        label={t('id')}
+                        label={('id')}
                         name="email"
                         autoComplete="email"
                         inputRef={register}
                         error={!!errors.email}
-                        helperText={t(errorMessage('email'))}
+                        helperText={(errorMessage('email'))}
                     />
                     <TextField
                         variant="outlined"
@@ -190,7 +190,7 @@ export default function SignUp() {
                         required
                         fullWidth
                         name="password"
-                        label={t('Password')}
+                        label={('Password')}
                         type="password"
                         id="password"
                         inputRef={register}
@@ -205,7 +205,7 @@ export default function SignUp() {
                         required
                         fullWidth
                         name="confirmPassword"
-                        label={t('Confirm Password')}
+                        label={('Confirm Password')}
                         type="password"
                         inputRef={register}
                         id="confirm"
@@ -220,7 +220,7 @@ export default function SignUp() {
                         required
                         fullWidth
                         id="fullname"
-                        label={t('Name')}
+                        label={('Name')}
                         name="fullName"
                         inputRef={register}
                         error={!!errors.fullName}
@@ -234,7 +234,7 @@ export default function SignUp() {
                         required
                         fullWidth
                         name="phoneNumber"
-                        label={t('Phone Number')}
+                        label={('Phone Number')}
                         type="tel"
                         inputRef={register}
                         id="phone"
@@ -247,7 +247,7 @@ export default function SignUp() {
                             id="demo-simple-select-label"
                             variant="outlined"
                         >
-                            {t('Role')}
+                            {('Role')}
                         </InputLabel>
                         <Controller
                             as={
@@ -256,7 +256,7 @@ export default function SignUp() {
                                     required
                                     fullWidth
                                     name="role"
-                                    label={t('Role')}
+                                    label={('Role')}
                                     id="role"
                                     value={role}
                                     onChange={(e) => setRole(e.target.value)}
@@ -264,13 +264,13 @@ export default function SignUp() {
                                     helpertext={errorMessage('role')}
                                 >
                                     <MenuItem value="Master">
-                                        {t('Master')}
+                                        {('Master')}
                                     </MenuItem>
                                     <MenuItem value="Server">
-                                        {t('Server')}
+                                        {('Server')}
                                     </MenuItem>
                                     <MenuItem value="Teacher">
-                                        {t('Teacher')}
+                                        {('Teacher')}
                                     </MenuItem>
                                 </Select>
                             }
@@ -286,13 +286,13 @@ export default function SignUp() {
                         required
                         fullWidth
                         id="code"
-                        label={t('Code')}
+                        label={('Code')}
                         name="code"
                         inputRef={register}
                         autoComplete="text"
                         autoFocus
                         error={!!errors.code}
-                        helperText={t(errorMessage('code'))}
+                        helperText={(errorMessage('code'))}
                     />
                     <Button
                         type="submit"
@@ -301,12 +301,12 @@ export default function SignUp() {
                         style={{ background: '#ffc107' }}
                         className={classes.submit}
                     >
-                        {t('Sign Up')}
+                        {('Sign Up')}
                     </Button>
                     <Grid container>
                         <Grid item xs>
                             <Link href="/login" variant="body2">
-                                {t('have an account')}?
+                                {('have an account')}?
                             </Link>
                         </Grid>
                     </Grid>

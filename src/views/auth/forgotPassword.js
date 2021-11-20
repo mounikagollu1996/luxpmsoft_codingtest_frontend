@@ -1,12 +1,12 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
+// import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+// import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Alert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
@@ -87,15 +87,15 @@ export default function ForgotPassword() {
             <CssBaseline />
             <div className={classes.paper}>
                 <Typography component="div">
-                    <center>{t('Please enter your e-mail')}</center>
+                    <center>{'Please enter your e-mail'}</center>
                 </Typography>
                 {message !== '' && (
                     <Typography component="div">
                         <strong>
                             <center>
-                                {t(
+                                {
                                     'Please check your email, a link to reset your password was sent to you'
-                                )}
+                                }
                             </center>
                         </strong>
                     </Typography>
@@ -120,7 +120,7 @@ export default function ForgotPassword() {
                         required
                         fullWidth
                         id="email"
-                        label={t('Email Address')}
+                        label={'Email Address'}
                         name="email"
                         autoComplete="email"
                         autoFocus
@@ -134,7 +134,7 @@ export default function ForgotPassword() {
                         style={{ background: '#ffc107' }}
                         className={classes.submit}
                     >
-                        {t('Request Link')}
+                        {'Request Link'}
                     </Button>
                 </form>
             </div>

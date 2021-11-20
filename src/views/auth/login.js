@@ -105,10 +105,10 @@ export default function SignIn(/* { setIsSignedIn } */) {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    <strong>{t('Welcome to Our Website')}</strong>
+                    <strong>{('Welcome to Our Website')}</strong>
                 </Typography>
                 <Typography component="div">
-                    <center>{t('Login To Our Website Freely')}</center>
+                    <center>{('Login To Our Website Freely')}</center>
                 </Typography>
                 <form className={classes.form} onSubmit={signIn}>
                     {error ? (
@@ -130,7 +130,7 @@ export default function SignIn(/* { setIsSignedIn } */) {
                         required
                         fullWidth
                         id="email"
-                        label={t('Email Address')}
+                        label={('Email Address')}
                         name="email"
                         autoComplete="email"
                         autoFocus
@@ -142,7 +142,7 @@ export default function SignIn(/* { setIsSignedIn } */) {
                         required
                         fullWidth
                         name="password"
-                        label={t('Password')}
+                        label={('Password')}
                         type="password"
                         id="password"
                         autoComplete="current-password"
@@ -155,19 +155,19 @@ export default function SignIn(/* { setIsSignedIn } */) {
                         style={{ background: '#ffc107' }}
                         className={classes.submit}
                     >
-                        {t('Sign In')}
+                        {('Sign In')}
                     </Button>
 
                     <hr />
                     <Grid container>
                         <Grid item xs>
                             <Link href="/register" variant="body2">
-                                {t("Don't have an account")}
+                                {("Don't have an account")}
                             </Link>
                         </Grid>
                         <Grid item>
                             <Link href="/forgotPassword" variant="body2">
-                                {t('Forgot Password')}
+                                {('Forgot Password')}
                             </Link>
                         </Grid>
                     </Grid>
