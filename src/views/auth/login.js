@@ -133,13 +133,12 @@ export default function SignIn(/* { setIsSignedIn } */) {
               window.location = "/";
             }
           } else {
-            console.log(data.message);
             setError(data.message);
           }
         }
       })
       .catch((error) => {
-        setError(t("Email or Password are incorrect !"));
+        setError("Email or Password are incorrect !");
       });
   };
   return (

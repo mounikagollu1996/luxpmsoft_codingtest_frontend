@@ -42,7 +42,9 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     position: "absolute",
-    width: '200px',
+    width: 'auto',
+    padding: '0 2rem',
+    textAlign: 'center',
     top: "19.7%",
     bottom: "76.63%",
     fontFamily: "Roboto",
@@ -54,8 +56,9 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     position: "absolute",
-    width: '200px',
-    top: "25.7%",
+    width: 'auto',
+    padding: '0 2rem',
+    top: "30.7%",
     marginBottom: '2rem',
     fontFamily: "Roboto",
     fontStyle: "normal",
@@ -144,10 +147,10 @@ export default function ForgotPassword() {
       <div className={classes.paper}>
       <div className={classes.logo}></div>
         <Typography component="div" className={classes.title}>
-          <strong>{"Forgot Password?"}</strong>
+          <strong>{"A code has been sent to youe email"}</strong>
         </Typography>
         <Typography component="div" className={classes.subtitle}>
-          <span>{"Please enter your e-mail associated to your account"}</span>
+          <span>{"The code has been sent to yourmail@gmail.com. please enter the code below."}</span>
         </Typography>
         {message !== "" && (
           <Typography component="div">
@@ -174,16 +177,16 @@ export default function ForgotPassword() {
             <></>
           )}
           <TextField
-            label="Email"
-            placeholder="sabahat@gmail.com"
+            label="code"
+            placeholder=""
             variant="outlined"
             margin="normal"
             className="login-first-input"
             required
             fullWidth
-            id="email"
-            name="email"
-            autoComplete="email"
+            id="code"
+            name="code"
+            autoComplete="code"
             // autoFocus
             onChange={handleEmailChange}
           />
@@ -195,7 +198,7 @@ export default function ForgotPassword() {
             style={{ background: "#3B286D" }}
             className={classes.submit}
           >
-            {"Submit Email"}
+            {"Verify"}
           </Button>
         </form>
       </div>

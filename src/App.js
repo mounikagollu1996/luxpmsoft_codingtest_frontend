@@ -8,6 +8,7 @@ import Login from './views/auth/login';
 import Register from './views/auth/register';
 import ForgotPassword from './views/auth/forgotPassword';
 import ResetPassword from './views/auth/resetPassword';
+import verfiyEmail from './views/auth/verifyEmail';
 // import StudentManagement from './views/studentManagement/index';
 // import Teachers from './views/teachers/index';
 // import Classrooms from './views/classrooms/index';
@@ -43,6 +44,10 @@ function App() {
                 <Route
                     path={`${process.env.PUBLIC_URL}/resetPassword/:token`}
                     component={ResetPassword}
+                />
+                <Route
+                    path={`${process.env.PUBLIC_URL}/verifyemail`}
+                    component={verfiyEmail}
                 />
                 <Route
                     path={`${process.env.PUBLIC_URL}/register`}
