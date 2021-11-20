@@ -17,18 +17,6 @@ import { Config } from "../../config/config";
 import { useTranslation } from "react-i18next";
 import Background from "../../assets/gradation.png";
 axios.defaults.baseURL = Config.api_url;
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="#">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   logo: {
@@ -129,8 +117,9 @@ export default function SignIn(/* { setIsSignedIn } */) {
     };
 
     axios
-      .post(`/signin`, data)
+      .post('/login', data)
       .then(({ data }) => {
+
         if (data) {
           if (data.success) {
             localStorage.setItem("token", data.token);
@@ -144,6 +133,7 @@ export default function SignIn(/* { setIsSignedIn } */) {
               window.location = "/";
             }
           } else {
+            console.log(data.message);
             setError(data.message);
           }
         }
