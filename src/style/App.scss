@@ -9,6 +9,9 @@ $icon-bg-color: rgba(255, 255, 255, 0.05);
 $icon-size: 35px;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
+html {
+    background: #E5E5E5;
+}
 body {
     margin: 0;
     height: 100vh;
@@ -23,11 +26,28 @@ body {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
+.makeStyles-paper-3 {
+    margin-top: 0px !important;
+}
 #root {
     height: 100%;
+    background: #E5E5E5;
+    overflow-y: hidden;
 }
 .card {
     background-color: lightgray !important;
+}
+// .MuiContainer-root {
+//     max-width: 414px;
+//     height: 600px;
+//     position: relative;
+//     margin-top: 5rem;
+//     background: #ffffff;
+// }
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline, textarea {
+    border: none;
+    border-bottom: 1px solid #16110D;
+    border-radius: 0;
 }
 .app {
     height: 100%;
@@ -167,6 +187,7 @@ body {
             }
         }
     }
+   
     @media (max-width: $breakpoint-md) {
         .btn-toggle {
             display: flex;
